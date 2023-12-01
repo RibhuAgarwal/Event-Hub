@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_programs"
+            android:icon="@drawable/event"
+            android:title="Programs" />
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/live"
+            android:title="Live++"/>
+        <item
+            android:id="@+id/nav_eatdrink"
+            android:icon="@drawable/lunch"
+            android:title="Eat &amp; Drink" />
+        <item
+            android:id="@+id/nav_Access"
+            android:icon="@drawable/access"
+            android:title="Access" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_tickets"
+            android:icon="@drawable/user"
+            android:title="Your Profile" />
+        <item
+            android:id="@+id/nav_createevent"
+            android:icon="@drawable/addevent"
+            android:title="Create Event" />
+
+
+
+
+    </group>
+
+</menu>

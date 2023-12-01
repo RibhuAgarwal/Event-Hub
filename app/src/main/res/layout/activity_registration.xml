@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegistrationActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
+                android:layout_marginTop="25sp"
+                android:src="@drawable/logo"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15sp"
+                android:layout_below="@+id/logo"
+                app:cardCornerRadius="40dp"
+                android:id="@id/card_View"
+                >
+                <LinearLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_View"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registration"
+                        android:textStyle="bold"
+                        android:id="@+id/login_tv"
+                        android:layout_marginStart="70dp"
+                        android:textSize="40sp"/>
+
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="160sp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:hint="First Name"
+                        android:textAlignment="center"
+                        android:textColorHint="#59C6F3"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:textColor="#59C6F3"
+                        android:id="@+id/et_reg_Fname"
+                        android:background="@drawable/top_background"
+                        />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="160sp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:hint="Last Name"
+                        android:textAlignment="center"
+                        android:textColorHint="#59C6F3"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:textColor="#59C6F3"
+                        android:id="@+id/et_reg_Lname"
+                        android:background="@drawable/top_background"
+                        />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="160sp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:hint="Password"
+                        android:textAlignment="center"
+                        android:textColorHint="#59C6F3"
+                        android:textColor="#59C6F3"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/et_reg_password"
+                        android:background="@drawable/top_background"
+                        />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="160sp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:hint="Confirm Password"
+                        android:textAlignment="center"
+                        android:textColorHint="#59C6F3"
+                        android:textColor="#59C6F3"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/et_reg_repassword"
+                        android:background="@drawable/top_background"
+                        />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="160sp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:hint="Email"
+                        android:textAlignment="center"
+                        android:textColorHint="#59C6F3"
+                        android:textColor="#59C6F3"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/et_reg_email"
+                        android:background="@drawable/top_background"
+                        />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="160sp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:hint="Phone Number"
+                        android:textAlignment="center"
+                        android:textColorHint="#59C6F3"
+                        android:textColor="#59C6F3"
+                        android:ems="10"
+                        android:id="@+id/et_reg_phone"
+                        android:background="@drawable/top_background"
+                        />
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginStart="55sp"
+                        android:text="Sign In"
+                        android:id="@+id/reg_btn"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

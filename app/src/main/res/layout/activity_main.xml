@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
+                android:layout_marginTop="25sp"
+                android:src="@drawable/logo"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15sp"
+                android:layout_below="@+id/logo"
+                app:cardCornerRadius="40dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textStyle="bold"
+                    android:id="@+id/login_tv"
+                    android:layout_marginStart="118dp"
+                    android:textSize="40sp"/>
+
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="160sp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_gravity="center"
+                    android:hint="Username"
+                    android:textAlignment="center"
+                    android:textColorHint="#59C6F3"
+                    android:inputType="textEmailAddress"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:ems="10"
+                    android:textColor="#59C6F3"
+                    android:id="@+id/et_reg_username"
+                    android:background="@drawable/top_background2"
+                    />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="160sp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:hint="Password"
+                        android:textAlignment="center"
+                        android:textColorHint="#59C6F3"
+                        android:textColor="#59C6F3"
+                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/baseline_key_24"
+                        android:ems="10"
+                        android:id="@+id/et_reg_password"
+                        android:background="@drawable/top_background2"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forget Password?"
+                        android:layout_marginRight="55dp"
+                        android:paddingStart="177dp"
+                        android:id="@+id/forgettv"
+                        />
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:text="Sign In"
+                        android:id="@+id/signin_btn"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_gravity="center"
+                        android:text="Register"
+                        android:id="@+id/reg_btn"
+                        android:layout_height="wrap_content"/>
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="horizontal">-->
+<!--                        -->
+<!--                        -->
+<!--                    </LinearLayout>-->
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

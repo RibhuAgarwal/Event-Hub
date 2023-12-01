@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "517724758838",
+    "firebase_url": "https://eventhub-652ad-default-rtdb.firebaseio.com",
+    "project_id": "eventhub-652ad",
+    "storage_bucket": "eventhub-652ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517724758838:android:6da73d14a6b83cec5f8997",
+        "android_client_info": {
+          "package_name": "com.example.eventhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7N8xfSPuxuGNp5FENpo8n5Of9lxCed0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#F2F6FB" /> <!-- Change this to your preferred background color -->
+
+            <!-- Define the curve with a bottom padding. Adjust this value for your desired curve -->
+            <padding android:bottom="50dp" />
+
+            <!-- Optional: Add a drop shadow using the elevation property on CardView or add here -->
+            <corners android:radius="10dp" /> <!-- Rounded corners. Adjust if needed. -->
+        </shape>
+    </item>
+    <item>
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="bottom">
+            <shape>
+                <solid android:color="#F0F0F0" /> <!-- Change this to your preferred card background color -->
+
+                <!-- Making the curve. Adjust the radii for your desired curve -->
+                <corners
+                    android:topLeftRadius="100dp"
+                    android:topRightRadius="100dp"
+                    android:bottomLeftRadius="10dp"
+                    android:bottomRightRadius="10dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
